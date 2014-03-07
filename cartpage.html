@@ -1,0 +1,154 @@
+<?php
+session_start();
+// Script Error Reporting
+error_reporting(E_ALL);
+ini_set('display_errors','1');
+?>
+
+
+<?php
+if(isset($_POST['pid'])){
+	$pid = $_POST['pid'];
+	$wasfound=false;
+	$i=0;
+	//if the cart session variable is not set or cart array is empty
+	if(!isset($_SESSION("cart_array"])|| count($_SESSION["cart_array"])<1){
+	S_SESSION["Cart_array"] = array(1=> array("item_id" => $pid,"quantity"=> 1));
+	}else{
+}
+
+}
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title> Spunky Site
+</title>
+
+
+<style>
+
+							@import url(css/lay-out.css);
+		            		@import url(css/style.css);
+							@import url(css/nav.css);
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<form id="login"action="register.php" method="post">
+Username: <input type="text" name="Username">
+Password: <input type="text" name="Password">
+<input type="submit" name="submit" value="Register">
+</form>
+
+<!-- ********************* banner top************** -->
+<div id="banner">
+<a href="home.html">
+					<img src="images/sale.jpg" alt="picture of icon"></a>
+</div>
+
+<!-- *********************  navbar **************** -->
+<div id="container">
+
+
+	<div id="navone">
+		<ul>
+			<li><a href="home.html">
+					<img src="images/home.jpg" alt="picture of icon"></a></li>
+
+			<li><a href="womens.html" id="womens.html">Womens</a>
+				<ul>
+					<li><a href="womens.html">T-shirts</a></li>
+					<li><a href="sales.html">Sales</a></li>
+
+			   </ul>
+		 	</li>
+		 	<li><a href="mens.html" id="mens.html">Mens</a>
+							<ul>
+								<li><a href="mens.html">T-shirts</a></li>
+								<li><a href="sales.html">Sales</a></li>
+						   </ul>
+		 	</li>
+
+			<li><a href="cartpage.html">Guru</a>
+		        <ul>
+			        <li><a href="about.html">About</a></li>
+			        <li><a href="video.html">Video's</a></li>
+		        </ul>
+		  </li>
+
+		</ul>
+	</div>
+
+
+<!-- ********************* product table ************** -->
+<div align="center" id="mainWrapper">
+ <?php include_once("template_header.php");?>
+ <div>
+ 	<div>
+ 	<?php echo $cartOutput; ?>
+ 	<br /><br />
+ 	<a href="cart.php?cmd=emptycart">Click Here to Empty Your Shopping Cart</a>
+ 	</div>
+ 	<br />
+ 	<?php include_once("template_footer.php");?>
+ 	</div>
+
+
+
+
+
+<!-- ********************* 3 box************** -->
+
+
+<hr>
+
+<!-- ********************* FOOTER DIV ************** -->
+<div id="footer">
+
+				<p>
+				 <strong>Spunky t-shirts&copy; 2013 &bull;</strong>
+				<a href="/privacy_policy">Privacy Policy</a>
+				</p>
+
+				<strong>Website development by
+				<a href="https://www.facebook.com/damien.brick.9" target="_blank">Damien Brick</a>
+
+				email: <a href="mailto:damienpbrick@yahoo.co.uk">webmaster</a></strong>
+</div>
+
+
+<div id="footertwo">
+
+
+			<a href="https://www.facebook.com/pages/T-Shirt-Guru/246536428728304">
+			<img src="images/facebook.png" alt="picture of icon"></a>
+
+
+			<a href="https://twitter.com/Guru19117751">
+			<img src="images/twitter.png" alt="picture of icon"></a>
+
+<p> <a href="videos.html">Videos</a>
+	<a href="sitemap.html">Sitemap</a>
+	<a href="contact.html">Contact</a>
+	<br>
+	<a href="whyus.html">Why Us</a>
+	<a href="ethical.html">Ethical Policy</a>
+
+</div>
+
+</body>
+</html>
+

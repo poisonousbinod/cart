@@ -1,0 +1,147 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title> Spunky Site
+</title>
+
+
+<style>
+
+							@import url(css/lay-out.css);
+		            		@import url(css/style.css);
+							@import url(css/nav.css);
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<form id="login"action="register.php" method="post">
+Username: <input type="text" name="Username">
+Password: <input type="text" name="Password">
+<input type="submit" name="submit" value="Register">
+</form>
+
+<!-- ********************* banner top************** -->
+<div id="banner">
+<a href="home.html">
+					<img src="images/sale.jpg" alt="picture of icon"></a>
+</div>
+
+<!-- *********************  navbar **************** -->
+<div id="container">
+
+
+	<div id="navone">
+		<ul>
+			<li><a href="home.html">
+					<img src="images/home.jpg" alt="picture of icon"></a></li>
+
+			<li><a href="womens.html" id="womens.html">Womens</a>
+				<ul>
+					<li><a href="womens.html">T-shirts</a></li>
+					<li><a href="sales.html">Sales</a></li>
+
+			   </ul>
+		 	</li>
+		 	<li><a href="mens.html" id="mens.html">Mens</a>
+							<ul>
+								<li><a href="mens.html">T-shirts</a></li>
+								<li><a href="sales.html">Sales</a></li>
+						   </ul>
+		 	</li>
+
+			<li><a href="eaglewomen.html">Guru</a>
+		        <ul>
+			        <li><a href="about.html">About</a></li>
+
+		        </ul>
+		  </li>
+
+		</ul>
+	</div>
+
+
+<!-- ********************* product table ************** -->
+<div id="image_one">
+<img src="images/eaglewomenbig.jpg" alt="banner">
+
+
+<ul id="product_style">
+
+
+<li><strong>Eagle T-shirt</strong></li>
+
+<li>By Damien</li>
+<li id="red"><Strong>&euro;29.0</strong></li>
+
+ <li>Size</li>
+<li>
+
+<form>
+<input type="radio" name="sex" value="male">large
+<input type="radio" name="sex" value="female">Medium
+<input type="radio" name="sex" value="female">Small
+</form>
+</li>
+<li><form id="form1" name"form1"method="post"action="cartphp">
+	<input type="hidden" name="pid"id="pid"value="<?php echco$id;?>"/>
+	<input type="submit" name="button"id="button"value="Add to Shopping Cart"/>
+</form>
+</li>
+</ul>
+
+</div>
+
+
+<!-- ********************* 3 box************** -->
+
+
+<hr>
+
+<!-- ********************* FOOTER DIV ************** -->
+<div id="footer">
+
+				<p>
+				 <strong>Spunky t-shirts&copy; 2013 &bull;</strong>
+				<a href="/privacy_policy">Privacy Policy</a>
+				</p>
+
+				<strong>Website development by
+				<a href="https://www.facebook.com/damien.brick.9" target="_blank">Damien Brick</a>
+
+				email: <a href="mailto:damienpbrick@yahoo.co.uk">webmaster</a></strong>
+</div>
+
+
+<div id="footertwo">
+
+
+			<a href="https://www.facebook.com/pages/T-Shirt-Guru/246536428728304">
+			<img src="images/facebook.png" alt="picture of icon"></a>
+
+
+			<a href="https://twitter.com/Guru19117751">
+			<img src="images/twitter.png" alt="picture of icon"></a>
+
+<p> <a href="videos.html">Videos</a>
+	<a href="sitemap.html">Sitemap</a>
+	<a href="contact.html">Contact</a>
+	<br>
+	<a href="whyus.html">Why Us</a>
+	<a href="ethical.html">Ethical Policy</a>
+
+</div>
+
+</body>
+</html>
+
